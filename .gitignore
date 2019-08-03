@@ -1,2 +1,6 @@
 .idea/*
 __pycache__
+*.pyc
+*.hdf5
+data
+*.tmp.json

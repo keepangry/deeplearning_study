@@ -2,7 +2,7 @@
 # @Time    : 2019/7/28 下午5:19
 # @Author  : yangsen
 # @Email   : 0@keepangry.com
-# @File    : main.py
+# @File    : train.py
 # @Software: PyCharm
 
 import tensorflow as tf
