@@ -5,9 +5,9 @@
 # @File    : predict.py
 # @Software: PyCharm
 
-from tasks.chinese_word_segment.models import bilstm_cnn_crf
+from tasks.chinese_word_segment.bilstm_cnn_crf.models import bilstm_cnn_crf
 import numpy as np
-from tasks.chinese_word_segment.config import char2id_json_file, maxlen, id2tag, model_file, num_classes
+from tasks.chinese_word_segment.bilstm_cnn_crf.config import char2id_json_file, maxlen, id2tag, model_file, num_classes
 from tensorflow.python.keras.preprocessing.sequence import pad_sequences
 import json
 

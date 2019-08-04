@@ -1,5 +1,8 @@
-1、 bilstm+crf分词任务，crf-crf_accuracy:0.95，20190803
+keras 通用任务
 
-2、 下一步，进行elmo + * + crf
 
-3、 下一步，进行bert + * + crf
+## 中文分词 /tasks/chinese_word_segment
+1、bilstm_cnn_crf
+
+2、bert_bilstm_crf
+

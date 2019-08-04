@@ -9,7 +9,7 @@ import numpy as np
 from collections import Counter
 from utils import v2k
 
-from tasks.chinese_word_segment.config import train_file, seed, tag2id, char2id_json_file
+from tasks.chinese_word_segment.bilstm_cnn_crf.config import train_file, seed, tag2id, char2id_json_file
 from tensorflow.python.keras.utils import to_categorical
 from tensorflow.python.keras.preprocessing.sequence import pad_sequences
 import json

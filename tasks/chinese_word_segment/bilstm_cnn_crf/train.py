@@ -5,10 +5,10 @@
 # @File    : train.py
 # @Software: PyCharm
 
-from tasks.chinese_word_segment.dataset import *
-from tasks.chinese_word_segment.config import *
-from tasks.chinese_word_segment.models import bilstm_cnn_crf
-from keras.callbacks import Callback, ModelCheckpoint
+from tasks.chinese_word_segment.bilstm_cnn_crf.dataset import *
+from tasks.chinese_word_segment.bilstm_cnn_crf.config import *
+from tasks.chinese_word_segment.bilstm_cnn_crf.models import bilstm_cnn_crf
+from keras.callbacks import ModelCheckpoint
 
 
 char_size = len(char2id)+2

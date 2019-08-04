@@ -10,7 +10,7 @@ from utils import v2k
 
 seed = 0
 train_file = BASE_PATH + '/data/chinese_word_segment/icwb2-data/training/msr_training.utf8'
-model_file = BASE_PATH + '/tasks/chinese_word_segment/model/v1.hdf5'
+model_file = BASE_PATH + '/tasks/chinese_word_segment/bilstm_cnn_crf/model/v1.hdf5'
 batch_size = 512
 maxlen = 40
 num_classes = 5
@@ -19,4 +19,4 @@ num_classes = 5
 id2tag = {0: 's', 1: 'b', 2: 'm', 3: 'e'}   # 标签（sbme）与id之间的映射
 tag2id = v2k(id2tag)
 
-char2id_json_file = BASE_PATH + '/tasks/chinese_word_segment/char2id.tmp.json'
+char2id_json_file = BASE_PATH + '/tasks/chinese_word_segment/bilstm_cnn_crf/char2id.tmp.json'
