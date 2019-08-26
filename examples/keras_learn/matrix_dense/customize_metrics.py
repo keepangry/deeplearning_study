@@ -6,6 +6,18 @@ def pos_recall(y_true, y_pred):
     result = TP / P
     return result
 
+def macro_f1(y_true, y_pred, num_classes=3):
+    def f1(y_true, y_pred):
+        y_pred = K.cast(y_pred >= 0.5, 'float32')
+        TP = K.sum(y_pred * y_true)
+        precision = TP/(K.sum(y_pred)+0.0001)
+        recall = TP/(K.sum(y_true)+0.0001)
+        return 2*precision*recall / (precision+recall+0.0001)
+    sum = 0
+    for i in range(num_classes):
+        sum += f1(y_true[..., i], y_pred[..., i])
+    return K.cast(sum/num_classes, 'float32')
+
 
 def pos_precision(y_true, y_pred):
     # 预测为1
